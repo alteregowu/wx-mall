@@ -1,0 +1,78 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "登录",
+          "pathName": "pages/login/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "个人界面",
+          "pathName": "pages/my/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "商户登录",
+          "pathName": "pages/store_login/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "订单支付",
+          "pathName": "pages/pay/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "上传商品",
+          "pathName": "pages/store_operation_up/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "管理商品",
+          "pathName": "pages/store_manage/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "订单",
+          "pathName": "pages/my_record/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "管理订单",
+          "pathName": "pages/operation_order_detail/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "管理界面",
+          "pathName": "pages/store_operation/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "关于我们",
+          "pathName": "pages/about_us/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}
