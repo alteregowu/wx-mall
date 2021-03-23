@@ -1,0 +1,88 @@
+page{
+  background-color: rgb(219, 218, 218);
+}
+.up{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  align-self: center;
+}
+.line{
+  width: 90%;
+  height: 5rpx;
+  background-color: rgb(216, 216, 216);
+  margin-bottom: 50rpx;
+}
+.upload{
+  width: 96%;
+  height: 370rpx;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin-top: 20rpx;
+}
+.upload_1{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 50rpx;
+}
+
+.img{
+  display: flex;
+  width: 96%;
+  height: 300rpx;
+  background-color: #fff;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15rpx;
+  margin-top: 15rpx;
+  position: relative;
+  padding-top: 20rpx;
+}
+.img image{
+  left: 10rpx;
+  width: 120rpx;
+  height: 120rpx;
+  
+}
+.img icon{
+  position: relative;
+  top: -80rpx;
+  left: -25rpx;
+
+}
+
+.btn{
+  display: flex;
+  height: 120rpx;
+  top: 10rpx;
+  flex-direction: row;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn{
+  display: flex;
+  height: 120rpx;
+  flex-direction: row;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_wrap{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}

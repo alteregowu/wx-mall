@@ -1,0 +1,118 @@
+/* pages/operation_order_detail/index.wxss */
+.deatail_wrap{
+    display: flex;
+    width: 96%;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 200rpx;
+    border-radius: 10rpx;
+    margin-top: 20rpx;
+  }
+  
+  .deatail_top{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .deatail_main{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .order_wrap{
+    display: flex;
+    width: 96%;
+    height: 200rpx;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 20rpx;
+    margin-top: 20rpx;
+  }
+  
+  .order{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    height: 70rpx;
+  }
+  .order image{
+      width: 150rpx;
+      height: 120rpx;
+  }
+  
+  .order_main{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 230rpx;
+    align-items: center;
+  }
+
+  .user_content {
+    position: relative;
+  }
+  .user_content .user_main {
+    color: #666666;
+    position: absolute;
+    width: 96%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1rpx;
+  }
+  .user_content .user_main .info_warp {
+    margin-top: 30rpx;
+    background-color: #fff;
+    padding: 20rpx;
+  }
+  .user_content .user_main .info_warp .info_item {
+    padding: 20rpx ;
+  }
+  .user_content .user_main .info_warp .info_contact {
+    display: flex;
+    justify-content: space-between;
+  }
+  .user_content .user_main .info_call {
+    margin-top: 25rpx;
+    background-color: #fff;
+    padding: 20rpx ;
+  }
+  .user_content .user_main .info_call .call_item {
+    padding: 20rpx ;
+  }
+  .user_content .user_main .info_call .call_contact {
+    display: flex;
+    justify-content: space-between;
+  }
+  .user_content .user_main .recommend_warp {
+    margin-top: 30rpx;
+    background-color: #fff;
+    padding: 20rpx ;
+  }
+
+  .btn_wrap{
+    position: relative;
+    top: 430rpx;
+    align-self: center;
+  }
+  .btn_ph{
+    position: relative;
+    top: 5rpx;
+  }
+  .btn_se{
+    position: relative;
+    top: 35rpx;
+}

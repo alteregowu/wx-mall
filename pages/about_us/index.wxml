@@ -1,0 +1,31 @@
+<!-- <map  style="width:100%; height:500rpx;" longitude="{{markers[0].longitude}}"  latitude="{{markers[0].latitude}}" scale="18" markers="{{markers}}"/> -->
+<view class="top">
+    <block wx:for="{{name}}" wx:key="index">
+        <view class="title" wx:if="{{index==tit_num}}" bindtap="state" data-index="{{index}}">
+            <text >{{item}}</text>
+        </view> 
+        <view class="title_1" wx:else bindtap="state" data-index="{{index}}">
+            <text >{{item}}</text>
+            <view >
+                <text ></text>
+            </view>
+        </view> 
+    </block>
+</view>
+
+<view class="main" >
+    <view wx:if="{{tit_num==0}}">
+        <image src="cloud://alterxxx-5gmsuhqw57de94b8.616c-alterxxx-5gmsuhqw57de94b8-1304906481/img/about/jianjie.png" />
+        <text space="ensp">    中山市汇鑫卫浴科技有限公司专门从事卫浴产品的研制开发。公司把“让天下卫生间成为名副其实的卫生房间”作为奋斗目标；把创造世界上最节水、最实用的卫浴产品当作自己的使命；以人文、绿色、科技为产品开发理念；把不改变使用者的视觉习惯和使用习惯、不占空间和不留卫生死角作为设计原则。
+        </text>
+    </view>
+    <view wx:elif="{{tit_num==1}}">
+        <text >2</text>
+    </view>
+    <view wx:elif="{{tit_num==2}}">
+        <text >3</text>
+    </view>
+    <view wx:else>
+        <text >4</text>
+    </view>
+</view>

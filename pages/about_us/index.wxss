@@ -1,0 +1,36 @@
+/* pages/about_us/index.wxss */
+.top{
+    width: 100%;
+    height: 100rpx;
+    background-color: burlywood;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.title{
+    width: 300rpx;
+    height: 100rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 10rpx solid black;
+    font-size: 45rpx; 
+}
+.title_1{
+    width: 170rpx;
+    height: 100rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+   margin-top: 20rpx;
+}
+.main image{
+    width: 100%;
+}

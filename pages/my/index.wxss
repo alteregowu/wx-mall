@@ -1,0 +1,90 @@
+page {
+  background-color: #edece8;
+}
+.user_info_warp {
+  height: 45vh;
+  overflow: hidden;
+  background-color: burlywood;
+  position: relative;
+}
+.user_info_warp .user_img_warp {
+  position: relative;
+}
+.user_info_warp .user_img_warp .user_bg {
+  width: 100%;
+  filter: blur(10rpx);
+}
+.user_info_warp .user_img_warp .user_info {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20%;
+  text-align: center;
+}
+.user_info_warp .user_img_warp .user_info .user_icon {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.user_info_warp .user_img_warp .user_info .user_name {
+  color: #fff;
+  margin-top: 40rpx;
+  font-size: 40rpx ;
+}
+.user_info_warp .user_img_warp .user_info .user_country {
+  color: #fff;
+  margin-top: 10rpx;
+  font-size: 25rpx ;
+}
+.user_info_warp .user_btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40%;
+  border: 1px solid snow;
+  color: snow;
+  font-size: 40rpx;
+  padding: 30rpx;
+  border-radius: 10rpx;
+}
+.user_content {
+  position: relative;
+}
+.user_content .user_main {
+  color: #666666;
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -60rpx;
+}
+.user_content .user_main .info_warp {
+  margin-top: 30rpx;
+  background-color: #fff;
+  padding: 20rpx;
+}
+.user_content .user_main .info_warp .info_item {
+  padding: 20rpx ;
+  border-bottom: 1rpx solid #ccc;
+}
+.user_content .user_main .info_warp .info_contact {
+  display: flex;
+  justify-content: space-between;
+}
+.user_content .user_main .info_call {
+  margin-top: 25rpx;
+  background-color: #fff;
+  padding: 20rpx ;
+}
+.user_content .user_main .info_call .call_item {
+  padding: 20rpx ;
+}
+.user_content .user_main .info_call .call_contact {
+  display: flex;
+  justify-content: space-between;
+}
+.user_content .user_main .recommend_warp {
+  margin-top: 30rpx;
+  background-color: #fff;
+  padding: 20rpx ;
+}

@@ -1,0 +1,59 @@
+
+<view >
+<van-search 
+  value="{{inputValue}}"
+  placeholder="请输入搜索关键词"
+  bind:change="search" /></view>
+
+<!-- <view class="{{scrollTop>8?'addClass':''}}">
+  <view  class="mall-search ">
+    <input placeholder="请输入要搜索的内容" bindconfirm="search" confirm-type="done"  bindinput="input"  />
+    <image src="cloud://alterxxx-5gmsuhqw57de94b8.616c-alterxxx-5gmsuhqw57de94b8-1304906481/img/icon/Fangdajing.png" />
+  </view>
+</view> -->
+
+<view class="{{scrollTop>5?'addClass_1':''}}">
+  <view class="mall-list " wx:for="{{search}}" wx:key="_id">
+    <navigator class="mall-list_1  " url="../product/index?id={{item._id}}">
+      <image src="{{item.src[0]}}" class="list-img" />
+      <view >商品：{{item.name}} </view>
+      <view style=" margin-right: 50rpx;">价格：{{item.price}}</view>
+    </navigator>
+    <view  class="list-line"></view>
+  </view>
+</view>
+
+<view class="mall-banner" >
+  <swiper indicator-dots="{{false}}" autoplay circular interval="3000">    
+      <swiper-item wx:for="{{banner}}" wx:key="_id">
+        <image class="swiper-image" src="{{item.src}}" />
+      </swiper-item> 
+  </swiper>
+</view>
+
+<view class="mall-classify" >
+  <view  class="mall-classify_1" wx:for="{{classify}}" wx:key="_id">
+    <navigator url="../classify/index?name={{item.name}}" class="classify-nav" >
+      <image src="{{item.src}}" class="image" />
+      <text style="align-self:center" >{{item.name}}</text>
+    </navigator>
+  </view>
+</view>
+
+<view class="mall-product">
+  <view class="line"></view>
+  <view class="msg">
+    <view class="msg-line" ></view>
+    <view >热卖商品</view>
+  </view>
+  <block wx:for="{{product}}" wx:key="_id" >
+    <navigator class="product" url="../product/index?id={{item._id}}">      
+        <image src="{{item.src[0]}}" class="img" />
+        <view class="mall-product_2">
+          <text style="font-size:35rpx">{{item.name}}</text>
+          <text style="font-size:20rpx;color:#aaaaaa">规格：{{item.size}}mm</text>
+          <text class="mall-txt">¥{{item.price}}</text>
+        </view>      
+    </navigator>
+  </block>
+</view>

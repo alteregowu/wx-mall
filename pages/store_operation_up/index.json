@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "clear":"../../component/clear/clear"
+  },
+  "enablePullDownRefresh": true
+}

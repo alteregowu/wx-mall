@@ -1,0 +1,20 @@
+<block wx:for="{{product}}" wx:key="_id">
+    <navigator url="../store_operation_update/index?id={{item._id}}">
+        <view class="product_list">
+            <view class="product_list_1">
+                <view class="product_list_2">
+                    <image src="{{item.src[0]}}" ></image>
+                    <view class="product_list_3">
+                        <view style="font-size:20px">{{item.name}}</view>
+                        <view style="color:red">￥:{{item.price}}</view>
+                    </view>
+                </view>
+            </view>
+
+            <view class="product_list_4">
+                <view>销量：{{item.num}}</view>
+            </view>
+        </view>
+    <view class="line"></view>
+    </navigator>
+</block>

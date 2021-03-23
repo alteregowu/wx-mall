@@ -1,0 +1,58 @@
+
+<!-- 商品展示 -->
+<scroll-view class="product" scroll-y="true">
+<block wx:for="{{product}}" wx:key="_id">
+<!-- 商品信息 -->
+<view class="product_list">
+  <view class="product_list_1">
+    <view class="product_list_2">
+      <image src="{{item.product_src}}"></image>
+      <view class="product_list_3">
+        <view style="font-size:20px">{{item.product_name}}</view>
+        <view style="color:red">￥:{{item.product_price}}</view>
+      </view>
+    </view>
+  </view>
+  <!-- 商品数量 -->
+  <view class="product_list_4">
+    <view>数量：{{item.product_num}}</view>
+  </view>
+</view>
+<view class="line"></view>
+</block>
+</scroll-view>
+
+<!-- 地址 -->
+<view class="address">
+  <view wx:if="{{name}}">
+    <view class="address_list" >
+      <view>{{name}}：</view>
+      <view>{{phone_number}}</view>
+    </view>  
+    <view>{{address}}</view>
+  </view> 
+  <view wx:else > 
+    <button bindtap="address" plain="true" type="primary">添加地址</button>
+  </view>
+</view>
+<!-- 订单备注 -->
+<view class="remarks" >
+  <view>备注：</view>
+  <textarea placeholder="请填入备注" bindinput="remarks"></textarea>
+</view>
+
+
+<van-goods-action >
+  <van-goods-action-icon icon="chat-o" text="客服" open-type="contact" />
+  <van-goods-action-icon icon="cart-o" text="购物车" bind:click="backcart" />
+  <van-goods-action-button text="立即购买" bind:click="pay" />
+</van-goods-action>
+
+<!-- 按钮 -->
+<!-- <view class="btn">
+  <button open-type="contact" size="mini"  type="primary">联系客服</button>
+  <view class="pay" bindtap="pay">
+    <view style="color:white" >合计</view>
+    <view style="color:white">￥:{{money}}</view>
+  </view>
+</view> -->
