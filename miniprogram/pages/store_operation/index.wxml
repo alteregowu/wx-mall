@@ -1,0 +1,14 @@
+<view class="operation">
+  <view class="operation_1" bindtap="operation" data-page="../store_operation_up/index">
+    <image src="cloud://alterxxx-5gmsuhqw57de94b8.616c-alterxxx-5gmsuhqw57de94b8-1304906481/img/icon/shangchuanshangpin.png"></image>
+    <view>上传商品</view>
+  </view>
+  <view class="operation_1" bindtap="operation" data-page="../store_operation_order/index">
+    <image src="cloud://alterxxx-5gmsuhqw57de94b8.616c-alterxxx-5gmsuhqw57de94b8-1304906481/img/icon/dingdan.png"></image>
+    <view>管理订单</view>
+  </view>
+  <view class="operation_1" bindtap="operation" data-page="../store_manage/index">
+    <image src="cloud://alterxxx-5gmsuhqw57de94b8.616c-alterxxx-5gmsuhqw57de94b8-1304906481/img/icon/guanlisahngpin.png"></image>
+    <view>管理商品</view>
+  </view>
+</view>

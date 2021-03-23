@@ -1,0 +1,37 @@
+<!--pages/my_record_detail/index.wxml-->
+<view class="deatail_wrap">
+  <view class="deatail_top">
+    <view class="deatail_main">
+      <view>{{order.name}}:</view>
+      <view>{{order.phone_number}}</view>
+    </view>
+    <view>{{order.address}}</view>
+  </view>
+</view>
+
+<!-- 订单商品 -->
+<block wx:for="{{order.product}}" wx:key="_id">
+  <navigator url="../product/index?id={{item.product_id}}" class="order_wrap">
+    <view class="order">
+      <image src="{{item.product_src}}"/>
+      <view class="order_main">
+        <view>{{item.product_name}}</view>
+        <view>商品:{{item.product_num}}件</view>
+      </view>
+    </view>
+  </navigator>
+</block>
+
+
+<!-- 订单信息 -->
+<view class="user_content">
+    <view class="user_main">
+        <view class="info_warp">
+                <view class="info_item">订单信息</view>
+                <view class="info_item">订单时间：{{order.time}}</view>
+                <view class="info_item">订单金额：{{order.money}}</view>
+                <view class="info_item">备注：{{order.remark}}</view>
+        </view>  
+    </view>
+</view>
+

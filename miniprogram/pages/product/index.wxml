@@ -1,0 +1,39 @@
+<!-- 轮播图 -->
+<view class="banner" >
+  <swiper class="banner_1" indicator-dots autoplay circular interval="3000">    
+      <swiper-item wx:for="{{product_src}}" wx:key="index">
+        <image class="swiper-image" src="{{item}}" />
+      </swiper-item>
+  </swiper>
+</view>
+
+<!-- 产品信息 -->
+<view class="product">
+  <view class="product_1">
+    <view>{{product_name}}:</view>
+    <view style="color:red">{{product_price}}元</view>
+  </view>
+  <view style="color:#aaaaaa">规格：{{product_size}}mm</view>
+  <view style="color:rgb(141, 141, 141); font-size:35rpx">{{product_detail}}</view>
+  
+</view>
+<view class="line"></view>
+
+
+<!-- 商品详情 -->
+
+<view class="product_xq">
+  <view style="color:#ff6801" bindtap="xq">商品详情</view>
+</view>
+<image src="{{product_xq_src}}" mode="widthFix" style="width:750rpx"></image>
+<view class="xq-txt">你已经看完了!快下单吧</view>
+
+
+<!-- 按钮 -->
+<view class="pay">
+  <view class="pay_1" bindtap="into_cart">
+    <image class="pay-img"
+    src="cloud://alterxxx-5gmsuhqw57de94b8.616c-alterxxx-5gmsuhqw57de94b8-1304906481/img/icon/cart.png" />
+  </view>
+  <view class="pay_2" bindtap="buy">立即购买</view>
+</view>

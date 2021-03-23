@@ -1,0 +1,40 @@
+<!-- 顶部样式 -->
+<view class="user_info_warp">
+    <view class="user_img_warp" wx:if="{{userinfo.avatarUrl}}" >
+        <image class="user_bg" mode="widthFix" src="{{userinfo.avatarUrl}}" />
+        <view class="user_info">
+            <image class="user_icon" src="{{userinfo.avatarUrl}}" />
+            <view class="user_name">{{userinfo.nickName}}</view>
+            <view class="user_country">{{userinfo.country}}</view>
+        </view>
+    </view>
+    <view wx:else class="user_btn">
+        <navigator url="../login/index" >登录</navigator>
+    </view>
+    
+
+</view>
+<!--个人信息列表 -->
+<view class="user_content">
+    <view class="user_main">
+        <view class="info_warp">
+                <view class="info_item" bindtap="address">收货地址</view>
+            <navigator url="../my_record/index" >
+                <view class="info_item">我的订单</view>
+            </navigator>
+            <navigator url="../store_login/index" >
+                <view class="info_item">商户管理</view>
+            </navigator>
+            <navigator url="../about_us/index" >
+                <view class="info_item">关于我们</view>
+            </navigator>
+        </view>
+        <view class="info_call" >
+            <view class="call_item call_contact">
+                <text>联系客服 </text>
+                <text >0760-88780139</text>
+            </view>
+        </view>
+        <!-- <view class="recommend_warp">把应用分享给其他人</view> -->
+    </view>
+</view>

@@ -1,0 +1,17 @@
+
+<view class="login_swrap">
+  <image src="cloud://alterxxx-5gmsuhqw57de94b8.616c-alterxxx-5gmsuhqw57de94b8-1304906481/img/login/logo.jpg" class="top_img"></image>
+  <form class="login" bindsubmit="formsubmit">
+    <view class="login_line">
+      <image src="cloud://alterxxx-5gmsuhqw57de94b8.616c-alterxxx-5gmsuhqw57de94b8-1304906481/img/icon/my.png" class="login_img"></image>
+      <input name="account" placeholder="请输入账号"></input>
+    </view>
+    <view class="line"></view>
+    <view class="login_line">
+      <image src="cloud://alterxxx-5gmsuhqw57de94b8.616c-alterxxx-5gmsuhqw57de94b8-1304906481/img/icon/psd.png" class="login_img" ></image>
+      <input name="pwd" placeholder="请输入密码" password="true"></input>
+    </view>
+    <view class="line"></view>
+    <button form-type="submit" class="btn">登陆</button>
+  </form>
+</view>

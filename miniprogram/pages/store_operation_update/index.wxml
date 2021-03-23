@@ -1,0 +1,55 @@
+<form bindsubmit="submit">
+    <view class="up">
+        <view class="upload">
+            <view class="upload_1">
+                <view>商品名：</view>
+                    <input placeholder="请输入商品名" name="name" value="{{name}}"></input>
+            </view>
+
+            <view class="line"></view>
+
+            <view class="upload_1"> 
+                <view>商品价格：</view>
+                <input placeholder="请输入商品价格" name="price" value="{{price}}"></input>
+            </view>
+
+            <view class="line"></view>
+ 
+            <view class="upload_1"> 
+                <view>商品尺码：</view>
+                <input placeholder="请输入商品尺码" name="size" value="{{size}}"></input>
+            </view>
+
+            <view class="line"></view>
+
+            <view class="upload_1">
+                <radio-group name="category"> 
+                    <block wx:for="{{classify}}" wx:key="_id">
+                        <radio value="{{item.name}}">{{item.name}}</radio>
+                    </block>
+                </radio-group>
+            </view>
+        </view>
+    
+
+        <view class="upload">
+            <view>商品简介：</view>
+            <textarea placeholder="商品简介" maxlength="2000" name="detail">{{detail}}</textarea>
+        </view>
+
+        <scroll-view class="img" scroll-y="true">
+            <block wx:for="{{img}}">
+                <image src="{{item}}"></image>
+                <icon bindtap="delete" size="23" type="clear"  color="red" data-id="{{index}}" data-src="{{item}}" />
+            </block>
+            <view class="btn">
+                <button size="mini" type="primary" bindtap="upload_img" >修改商品图片</button>
+            </view>
+        </scroll-view>
+
+    </view>
+    <view class="btn_wrap" >
+        <button form-type="submit" type="primary" >提交</button>
+        <button bindtap="delete_product" type="primary" >删除</button>
+    </view>
+</form>
